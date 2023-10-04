@@ -59,7 +59,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link align-middle px-0 text-white">
+                            <a href="{{ route('admin.product.index') }}" class="nav-link align-middle px-0 text-white">
                                 <i class="fs-4 bi-archive"></i> <span class="ms-1 d-none d-sm-inline">Product</span>
                             </a>
                         </li>
@@ -68,10 +68,15 @@
                                 <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">User</span>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0 text-white">
+                                <i class="fs-4 bi bi-box-arrow-in-left"></i> <span class="ms-1 d-none d-sm-inline">Log out</span>
+                            </a>
+                        </li>
                     </ul>
                     <hr>
-                    <div class="dropdown pb-4">
-                        <a href="#"
+                    <div class="dropdown pb-4 flex-column">
+                        {{-- <a href="#"
                             class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                             id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="https://i1.sndcdn.com/avatars-zO0cWsG0dyJDkSNe-MNFZDA-t500x500.jpg" alt="hugenerd"
@@ -86,7 +91,8 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="{{ route('logOut') }}">Sign out</a></li>
-                        </ul>
+                        </ul> --}}
+                        {{-- <a class="btn btn-dark" href="{{ route('logOut') }}">Log out</a> --}}
                     </div>
                 </div>
             </div>
